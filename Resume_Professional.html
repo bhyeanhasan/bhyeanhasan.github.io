@@ -4,359 +4,376 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="UTF-8">
     <title>My Resume</title>
-
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/linearicons.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/github-widget.css" />
+    <link rel="stylesheet" href="css/github-widget.css"/>
     <link rel="stylesheet" href="css/resume.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 </head>
+
+<style>
+
+    .txt {
+        color: dimgray;
+        font-weight: bold;
+    }
+
+    .DivIdToPrint {
+        background-color: white;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    a {
+        color: olivedrab;
+        background-color: transparent;
+        text-decoration: none;
+    }
+</style>
+
 <body>
 
 
+<div style="background-color: white" class="DivIdToPrint">
 
-<div class="container-fluid" id="Hide" style="text-align: right;margin-top: 5px">
+    <div class="container top-intro">
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+                <h3> MD. BABUL HASAN (NOYON)</h3>
+                <p class="txt"><i class="bi bi-geo-alt-fill"></i> Jhalokathi, Barishal, Bangladesh </p>
+                <p><i class="bi bi-telephone-fill"></i> +880 1920599266 </p>
+                <p><i class="bi bi-envelope-fill"></i> <a href="mailto: bhyean@yahoo.com">bhyean@gmail.com</a></p>
 
-    <input class="btn btn-block btn-success" type='button' id='btn' value='Print Resume' onclick='printDiv();'>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p><a href="https://bhyeanhasan.github.io/" target="_blank"><i class="bi bi-github"></i> Github</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <p><a href="https://www.linkedin.com/in/bhyeanhasan/" target="_blank"><i class="bi bi-linkedin"></i> Linkedin</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <p><a href="https://bhyeanhasan.blogspot.com/" target="_blank"><i class="bi bi-globe"></i> Blog</a></p>
+                    </div>
 
-
-</div>
-
-<div id='DivIdToPrint'>
-
-<div class="container top-intro">
-    <div class="row">
-        <div class="col-sm-6 col-md-6">
-            <h3> Md. Babul Hasan </h3>
-
-            <p> Phone: +880 1920599266 </p>
-            <p> Email:  <a href = "mailto: bhyean@yahoo.com">bhyean@gmail.com</a> </p>
-            <p> Website: <a href="https://www.bhyeanhasan.tech" target="_blank">www.bhyeanhasan.tech</a> </p>
-            <p> Social Sites: <a href="https://about.me/bhyeanhasan" target="_blank">https://about.me/bhyeanhasan</a> </p>
-        </div>
-        <div class="col-md-6">
-            <div class="pic">
-                <img id="mypicture" src="https://iili.io/B2qc2j.jpg" alt="Formal Picture">
+                </div>
             </div>
-        </div>
-        <hr>
-    </div>
-</div>
-
-<!--<div class="container">-->
-<!--    <div class="row">-->
-<!--        <div class="col-md-12">-->
-<!--            <h4>Mission and Vision:</h4>-->
-<!--            <div class="sub">-->
-<!--                <p>The main objective of my life is to be a good Software Engineer.</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-
-<!--<div class="container">-->
-<!--    <div class="row">-->
-<!--        <div class="col-md-12">-->
-<!--            <h4>Personal Information:</h4>-->
-<!--            <div class="sub">-->
-<!--                <table>-->
-<!--                    <tr>-->
-<!--                        <td>Father’s Name   </td>-->
-<!--                        <td>Md. Khalil Howlader</td>-->
-<!--                    </tr>-->
-<!--                    <tr>-->
-<!--                        <td>Mother’s Name   </td>-->
-<!--                        <td>Nasrin Begum</td>-->
-<!--                    </tr>-->
-<!--                    <tr>-->
-<!--                        <td>Date of Birth</td>-->
-<!--                        <td>17 August, 2000</td>-->
-<!--                    </tr>-->
-<!--                    <tr>-->
-<!--                        <td>Nationality</td>-->
-<!--                        <td>Bangladeshi (By Birth)</td>-->
-<!--                    </tr>-->
-<!--                    <tr>-->
-<!--                        <td>Religion</td>-->
-<!--                        <td>Islam</td>-->
-<!--                    </tr>-->
-<!--                    <tr>-->
-<!--                        <td>Marital Status</td>-->
-<!--                        <td>Unmarried</td>-->
-<!--                    </tr>-->
-<!--                    <tr>-->
-<!--                        <td>Blood Group</td>-->
-<!--                        <td>O (+ve)</td>-->
-<!--                    </tr>-->
-<!--                    <tr>-->
-<!--                        <td>Permanent address</td>-->
-<!--                        <td>214 Mirjapur, Ponabalia, Jhalokathi</td>-->
-<!--                    </tr>-->
-<!--                    <tr>-->
-<!--                        <td>Present Address</td>-->
-<!--                        <td>48 Doctor Potti Road, Jhalokathi</td>-->
-<!--                    </tr>-->
-<!--                </table>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h4>Educational Background at a Glance:</h4>
-            <div class="sub">
-                <table>
-                    <tr>
-                        <th colspan="2">Bachelor of Science (B.Sc. in Eng.) in Computer Science and Engineering</th>
-
-                    </tr>
-                    <tr>
-                        <td>Institution Name</td>
-                        <td>Patuakhali Science & Technology University (PSTU).</td>
-                    </tr>
-                    <tr>
-                        <td>Faculty </td>
-                        <td>Computer Science and Engineering (CSE).</td>
-                    </tr>
-                    <tr>
-                        <td>Year</td>
-                        <td>January,2019- Present</td>
-                    </tr>
-
-
-<!--                    <tr>-->
-<!--                        <th colspan="2">Higher Secondary Certificate (HSC)</th>-->
-
-<!--                    </tr>-->
-<!--                    <tr>-->
-<!--                        <td>Institution Name</td>-->
-<!--                        <td>Govt. Syed Hatem Ali College</td>-->
-<!--                    </tr>-->
-<!--                    <tr>-->
-<!--                        <td>Group </td>-->
-<!--                        <td>Science</td>-->
-<!--                    </tr>-->
-<!--                    <tr>-->
-<!--                        <td>Year</td>-->
-<!--                        <td>2018</td>-->
-<!--                    </tr>-->
-<!--                    <tr>-->
-<!--                        <td>GPA  </td>-->
-<!--                        <td>4.83</td>-->
-<!--                    </tr>-->
-
-<!--                    <tr>-->
-<!--                        <th colspan="2">Secondary School Certificate (SSC)</th>-->
-
-<!--                    </tr>-->
-<!--                    <tr>-->
-<!--                        <td>Institution Name</td>-->
-<!--                        <td>Jhalokathi Govt. High School.</td>-->
-<!--                    </tr>-->
-<!--                    <tr>-->
-<!--                        <td>Group </td>-->
-<!--                        <td>Science</td>-->
-<!--                    </tr>-->
-<!--                    <tr>-->
-<!--                        <td>Year</td>-->
-<!--                        <td>2016</td>-->
-<!--                    </tr>-->
-<!--                    <tr>-->
-<!--                        <td>GPA  </td>-->
-<!--                        <td>5</td>-->
-<!--                    </tr>-->
-
-                </table>
+            <div class="col-md-6">
+                <div class="pic">
+                    <img id="mypicture" src="https://iili.io/B2qc2j.jpg" alt="Formal Picture">
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h4>Project Experience at a glance:</h4>
-            <div class="sup">
-                <table>
-                    <tr>
-                        <td>GitHub Profile: </td>
-                        <td><a href="https://github.com/bhyeanhasan" target="_blank">https://github.com/bhyeanhasan</a></td>
-                    </tr>
-                </table>
+    <hr>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Mission and Vision:</h4>
+
+
+                <div class="sub">
+                    <p>I am eager to leverage my academic background, technical skills, and passion to embark on a
+                        dynamic career path. Seeking a challenging role in software development or artificial
+                        intelligence where I can apply my knowledge and upgrade my skills.</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h4>Technical Strengths:    </h4>
-            <div class="sub">
-                <table>
-                    <tr>
-                        <td>Framework</td>
-                        <td>: Django, Laravel , .Net , Express.js</td>
-                    </tr>
-                    <tr>
-                        <td>Programming Lang</td>
-                        <td>: Python , PHP , JavaScript , Java , C++ , C# , C </td>
-                    </tr>
-                    <tr>
-                        <td>Web Application</td>
-                        <td>: HTML , CSS , Bootstrap , JQuery</td>
-                    </tr>
-                    <tr>
-                        <td>Database</td>
-                        <td>: MySQL , Oracle , MongoDB , PostgreSQL & Microsoft Access</td>
-                    </tr>
-                    <tr>
-                        <td>Simulation Software</td>
-                        <td>: MATLAB , PSPICE , R Studio</td>
-                    </tr>
-                    <tr>
-                        <td>Miscellaneous Tool </td>
-                        <td>: Git (Version Control) , MS Excel , MS PowerPoint , MS Word , & LibreOffice</td>
-                    </tr>
-                    <tr>
-                        <td>Languages</td>
-                        <td>: English and Bengali</td>
-                    </tr>
-                </table>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Technical Strengths: </h4>
+                <div class="sub">
+                    <table>
+                        <tr>
+                            <td style="width: 35%">Domain Expertise</td>
+                            <td>Django Web, Django REST, React, ML, Deep Learning</td>
+                        </tr>
+                        <tr>
+                            <td>Programming Lang</td>
+                            <td>Python, C++, JavaScript, Java</td>
+                        </tr>
+                        <tr>
+                            <td>ML Framework / Package</td>
+                            <td>TensorFlow, Pytorch, Numpy, Pandas, Seaborn</td>
+                        </tr>
+                        <tr>
+                            <td>Internet of Things (IoT)</td>
+                            <td>Raspberry Pi, NodeMCU, Arduino</td>
+                        </tr>
+                        <tr>
+                            <td>Database</td>
+                            <td>MySQL, PostgreSQL, SQLite, SQL Server, Oracle , MongoDB</td>
+                        </tr>
+                        <tr>
+                            <td>Simulation Software</td>
+                            <td>MATLAB , PSPICE , R Studio</td>
+                        </tr>
+                        <tr>
+                            <td>Miscellaneous Tool</td>
+                            <td>Git (Version Control), Github, Azure, Docker, Latex</td>
+                        </tr>
 
+                    </table>
+
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h4>Programming Profile at a glance:</h4>
-            <div class="sup">
-                <table>
-                    <tr>
-                        <td>HackerRank Profile </td>
-                        <td><a href="https://www.hackerrank.com/bhyeanhasan" target="_blank">https://www.hackerrank.com/bhyeanhasan</a></td>
-                    </tr>
-                    <tr>
-                        <td>Codeforces Profile </td>
-                        <td><a href="https://codeforces.com/profile/bhyean" target="_blank">https://codeforces.com/profile/bhyean</a></td>
-                    </tr>
-                    <tr>
-                        <td>URI Profile </td>
-                        <td><a href="https://www.urionlinejudge.com.br/judge/en/profile/312468" target="_blank">https://www.urionlinejudge.com.br/judge/en/profile/312468</a></td>
-                    </tr>
-                    <tr>
-                        <td>ICPC Profile </td>
-                        <td><a href="https://icpc.global/ICPCID/EEM5615274SB" target="_blank">https://icpc.global/ICPCID/EEM5615274SB</a></td>
-                    </tr>
 
-                </table>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Educational Background:</h4>
+                <div class="sub">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p class="txt">B.Sc. in Engg. in Computer Science & Engineering (CSE)</p>
+                            <p>Patuakhali Science & Technology University (PSTU).</p></div>
+                        <div style="text-align: right" class="col-md-4">
+                            <p>From 2019 to 2024</p>
+                            <p>3.30 out of 4.00</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h4>Academic achievements & Awards:</h4>
-            <div class="sub">
-                <table>
-                    <tr>
-                        <td>Runner-Up in Project Showcasing</td>
-                        <td>4th PSTU Independence Day</td>
-                    </tr>
-                    <tr>
-                        <td>Education board scholarship </td>
-                        <td>PSC 2010, JSC 2014, SSC 2016</td>
-                    </tr>
-
-                    <tr>
-                        <td>One Bank scholarship</td>
-                        <td>2017, 2018</td>
-                    </tr>
-                    <tr>
-                        <td>Aungkur scholarship</td>
-                        <td>2019, 2020</td>
-                    </tr>
-                    <tr>
-                        <td>Grameen Bank Scholarship</td>
-                        <td>2014, 2016, 2019</td>
-                    </tr>
 
 
-                </table>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Experience:</h4>
+                <div class="sub">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p class="txt">Research Assistant</p>
+                            <p>Of an Assistant Professor</p>
+                            <p>Patuakhali Science & Technology University (PSTU).</p></div>
+                        <div style="text-align: right" class="col-md-4">
+                            <p>March 2023 - Present</p>
+                            <p>Deep Learning, Spatio-Temporal Data Analysis, Traffic Prediction</p>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h4>Extracurricular activities:     </h4>
-            <div class="sub">
-                <p> Associate at BUET Nuclear Engineering Club.</p>
-                <p> Campus Leader and Volunteer of Bangladesh Flying Labs.</p>
-                <p> Faculty Ambassador of PSTU Carrier Club.</p>
-                <p> Campus Ambassador of Bangladesh Olympiad.</p>
-                <p> Competitive Programmer (Team member of PSTU_INTegers)</p>
-                <p> Founder member (Project Committee) of CSE CLUB (PSTU).</p>
-                <p> Cadet at BNCC—PSTU (Naval Wing).</p>
-                <p> Campus Ambassador of Pathsala at PSTU.</p>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Programming Profile:</h4>
+                <div class="sub">
+                    <p>Solved around 1000+ problems in different online judges.</p>
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <a href="https://www.hackerrank.com/bhyeanhasan" target="_blank"><i class="bi bi-link-45deg"></i> HackerRank</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="https://codeforces.com/profile/bhyean" target="_blank"><i class="bi bi-link-45deg"></i> Codeforces</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="https://leetcode.com/bhyeanhasan/" target="_blank"><i class="bi bi-link-45deg"></i> LeetCode</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h4>Interest:     </h4>
-            <div class="sub">
-                <p>RC Projects, Reading novel and Gardening.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Projects:</h4>
+                <div class="sub">
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p class="txt">Amin Crockeries (Ecommerce Website)</p>
+                        </div>
+                        <div style="text-align: right" class="col-md-4">
+                            <a href="https://github.com/bhyeanhasan/Django-E-Commerce-Website" target="_blank"><i class="bi bi-github"></i>
+                                Code</a> /
+                            <a href="https://bhyean.pythonanywhere.com/" target="_blank"><i class="bi bi-send-fill"></i> Live View</a>
+                        </div>
+
+                        <div class="col-md-12">
+                            <p>An e-commerce platform, leveraging Django and Django REST for backend operations, while
+                                employing Django Template Language (DTL), Bootstrap for frontend design. Proficient in
+                                ORM, Email Verification, and Report Generation using ReportLab, with Docker for seamless
+                                deployment.</p>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-8">
+                            <p class="txt">Dhanshiri Students Welfare Association (DSWA)</p>
+                        </div>
+                        <div style="text-align: right" class="col-md-4">
+                            <a href="https://github.com/bhyeanhasan/Dhanshiri-Studets-Welfare-Association-DSWA"
+                               target="_blank"><i class="bi bi-github"></i> Code</a> /
+                            <a href="http://dswapstu.pythonanywhere.com/" target="_blank"><i class="bi bi-send-fill"></i> Live View</a>
+                        </div>
+
+                        <div class="col-md-12">
+                            <p>
+                                The DSWA web application represents a student-driven endeavor with the objective of
+                                creating a platform for students hailing from Jhalokathi District. Purpose is to
+                                facilitate connections between students, teachers, and alumni, while also serving as a
+                                resource for staying informed about upcoming events.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-8">
+                            <p class="txt">Online Image Ediotor</p>
+                        </div>
+                        <div style="text-align: right" class="col-md-4">
+                            <a href="https://github.com/bhyeanhasan/Image-Editor-using-Django" target="_blank"> <i class="bi bi-github"></i> Code</a> /
+                            <a href="http://bhyeanhasan.pythonanywhere.com/" target="_blank"><i class="bi bi-send-fill"></i> Live View</a>
+                        </div>
+
+                        <div class="col-md-12">
+                            <p>
+                                A dynamic online image editor utilizing Django, and OpenCV for image processing.
+                                Leveraging DTL, Bootstrap, HTML, and CSS for frontend design, I ensured responsive
+                                UI/UX. Proficient in system design and project management, I delivered a seamless
+                                platform for image manipulation and editing. </p>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-8">
+                            <p class="txt">Student Diary (Faculty of CSE, PSTU)</p>
+                        </div>
+                        <div style="text-align: right" class="col-md-4">
+                            <a href="https://github.com/bhyeanhasan/CSE-Diary" target="_blank"><i class="bi bi-github"></i> Code</a> /
+                            <a href="http://appcse16.pythonanywhere.com/" target="_blank"><i class="bi bi-send-fill"></i> Live View</a>
+                        </div>
+
+                        <div class="col-md-12">
+                            <p>
+                                The CSE-Diary project is a Flutter mobile app that uses the Django Rest Framework for
+                                the backend. The app allows users to create and manage their own profiles; it provides
+                                contact information for all students and gives class notifications through email. </p>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<!--<div class="container">-->
-<!--    <div class="row">-->
-<!--        <div class="col-md-12">-->
-<!--            <h4>Strength:</h4>-->
-<!--            <div class="sub">-->
-<!--                <p>Hard working, Self-motivated, Enthusiastic and Punctual, Dynamic and creative in 	thinking, Sense of good organizational behavior.</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Academic achievements & Awards:</h4>
+                <div class="sub">
+                    <table>
+                        <tr>
+                            <td>Runner-Up in Project Showcasing</td>
+                            <td>4th PSTU Independence Day</td>
+                        </tr>
+                        <tr>
+                            <td>Education board scholarship</td>
+                            <td>PSC 2010, JSC 2014, SSC 2016</td>
+                        </tr>
 
-<!--<div class="container">-->
-<!--    <div class="row">-->
-<!--        <div class="col-md-12">-->
-<!--            <h4>Language Proficiency:</h4>-->
-<!--            <div class="sub">-->
-<!--                <p>Bengali: Excellent in speaking, reading and writing</p>-->
-<!--                <p>English: Excellent in speaking, reading and writing</p>-->
+                        <tr>
+                            <td>One Bank scholarship</td>
+                            <td>2017, 2018</td>
+                        </tr>
+                        <tr>
+                            <td>Aungkur scholarship</td>
+                            <td>2019, 2020</td>
+                        </tr>
+                        <tr>
+                            <td>Grameen Bank Scholarship</td>
+                            <td>2014, 2016, 2019</td>
+                        </tr>
 
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Extracurricular activities: </h4>
+                <div class="sub">
+
+                    <p> Cadet of Bangladesh National Cadet Corps - BNCC (Naval Wing, PSTU).</p>
+                    <p> Campus Ambassador Satyen Bose Science Club, BUET</p>
+                    <p> Campus Leader and Volunteer of Bangladesh Flying Labs.</p>
+                    <p> Faculty Ambassador of PSTU Carrier Club.</p>
+                    <p> Competitive Programmer (Team member of PSTU_INTegers)</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Interest: </h4>
+                <div class="sub">
+                    <p>RC Projects, Reading and Gardening.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="container">-->
+    <!--    <div class="row">-->
+    <!--        <div class="col-md-12">-->
+    <!--            <h4>Strength:</h4>-->
+    <!--            <div class="sub">-->
+    <!--                <p>Hard working, Self-motivated, Enthusiastic and Punctual, Dynamic and creative in 	thinking, Sense of good organizational behavior.</p>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
+
+    <!--<div class="container">-->
+    <!--    <div class="row">-->
+    <!--        <div class="col-md-12">-->
+    <!--            <h4>Language Proficiency:</h4>-->
+    <!--            <div class="sub">-->
+    <!--                <p>Bengali: Excellent in speaking, reading and writing</p>-->
+    <!--                <p>English: Excellent in speaking, reading and writing</p>-->
+
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
 
 </div>
 
@@ -364,16 +381,15 @@
 <div class="footer">
 </div>
 
-
-
-
 <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
 <script src="js/github-widget.min.js"></script>
 <script src="js/vendor/jquery-2.2.4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
 <script src="js/easing.min.js"></script>
 <script src="js/hoverIntent.js"></script>
 <script src="js/superfish.min.js"></script>
