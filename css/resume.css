@@ -1,77 +1,131 @@
 
-#mypicture{
-    height: 180px;
-    width: 180px;
-    float: right;
-    border-radius: 100px;
-}
-.pic{
-    /*text-align: center;*/
+.txt {
+    color: dimgray;
+    font-weight: bold;
 }
 
-.container{
+.DivIdToPrint {
+    background-color: white;
+    /*padding: 20px 50px;*/
+    /*margin: 50px 100px;*/
+    padding: 2% 5%;
+    margin: 5% 8%;
+}
+
+a {
+    color: olivedrab;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#mypicture {
+    height: 180px;
+    width: 180px;
+    /*float: right;*/
+    border-radius: 100px;
+}
+
+.right-center{
+    text-align: right;
+}
+
+.container {
     /*padding-left: 15%;*/
     margin-top: 20px;
 }
 
-.sub{
+.sub {
     margin-left: 3%;
 }
 
-table{
+table {
     width: 100%;
 }
 
-td{
+td {
     /* margin-right: 10%; */
 }
 
-.sub{
+.sub {
     white-space: normal;
     /* word-break: break-all; */
     word-break: normal;
 }
 
-.sup
-{
+.sup {
     white-space: normal;
     word-break: break-all;
 }
 
 
-p{
+p {
     margin: 5px;
 }
-h4{
+
+h4 {
     margin-bottom: 5px;
 }
-.top-intro{
+
+.top-intro {
     margin-top: 50px;
 }
 
-body{
+body {
     margin-left: 20%;
     margin-right: 20%;
     background-color: whitesmoke;
 }
-.footer{
+
+.footer {
     padding: 20px;
 }
 
 @media screen and (max-width: 900px) {
-    body{
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-}
-@media screen and (max-width: 850px) {
-    body{
+  body {
         margin-left: 5%;
         margin-right: 5%;
     }
-    #mypicture{
+    
+    .DivIdToPrint {
+        background-color: white;
+        /*padding: 20px 50px;*/
+        /*margin: 50px 100px;*/
+        padding: 1px 2%;
+        margin: 2% 3%;
+    }
+
+    #mypicture {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .right-center{
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .DivIdToPrint {
+        background-color: white;
+        /*padding: 20px 50px;*/
+        /*margin: 50px 100px;*/
+        padding: 1px 2%;
+        margin: 2% 3%;
+    }
+
+    #mypicture {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .right-center{
+        text-align: center;
     }
 
 }
