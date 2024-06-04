@@ -12,12 +12,18 @@
   height: 90vh;
 }
 
-.border{
-  border-radius: 10px;
-  color: black;
+.brand-color{
+  color: #e45447;
 }
 
-.border:hover{
+.experience-border{
+  border-radius: 10px;
+  color: black;
+  background-color: #f9f9ff;
+  position: relative;
+}
+
+.experience-border:hover{
   background-color: #e45447;
   h5,h3,h4{
     color: white;
