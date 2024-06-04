@@ -12,6 +12,21 @@
   height: 90vh;
 }
 
+.border{
+  border-radius: 10px;
+  color: black;
+}
+
+.border:hover{
+  background-color: #e45447;
+  h5,h3,h4{
+    color: white;
+  }
+  a{
+    color: yellow;
+  }
+}
+
 .project-panel{
   border: #e45447;
   border-radius: 10px;
@@ -2402,7 +2417,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     .single-job .primary-btn:before {
       color: #222222; }
   .single-job:hover {
-    background: #999694;
+    background: #e45447;
     cursor: pointer;
     color: #fff; }
     .single-job:hover .top-left h4 {
