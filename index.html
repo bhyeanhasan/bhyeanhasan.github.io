@@ -29,852 +29,285 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/github-widget.css"/>
     <link rel="stylesheet" href="css/certificate.css"/>
+
+    <style>
+        /* CSS for the loader */
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff; /* Replace with your preferred background color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .loader .loader-icon {
+            width: 270px;
+            height: 270px;
+            border-radius: 50%;
+            border: 10px solid #e45447; /* Replace with your preferred color */
+            border-top-color: transparent;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* CSS for the name */
+        .loader-name {
+            position: absolute;
+            color: #e45447; /* Replace with your preferred color */
+            font-size: 48px;
+            font-weight: bold;
+        }
+    </style>
+
 </head>
 
 <body>
-
-<!--<div class="preloader-area">-->
-<!--    <div class="loader-box">-->
-<!--        <div class="loader"></div>-->
-<!--    </div>-->
-<!--</div>-->
+<div class="loader">
+    <div class="loader-icon"></div>
+    <div class="loader-name">N O Y O N</div>
+</div>
 
 
-<!-- start banner Area -->
-<section class="home-banner-area">
-    <div class="container">
+<div id="main-content">
 
-        <div class="row  d-flex align-items-center">
+    <!-- start banner Area -->
+    <section class="home-banner-area">
+        <div class="container">
 
-            <div class="banner-content col-lg-6 col-md-12 justify-content-center mt-1">
+            <div class="row  d-flex align-items-center">
+
+                <div class="banner-content col-lg-6 col-md-12 justify-content-center mt-1">
 
 
-                <div style="text-align: center;padding: 5px" class="me wow fadeInDown" data-wow-duration="1s"
-                     data-wow-delay="1.2s">
-                    <a href="index.html"><img style="width: 40%" src="img/bh_logo.png"></a>
-                </div>
+                    <div style="text-align: center;padding: 5px" class="me wow fadeInDown" data-wow-duration="2s"
+                         data-wow-delay="1.2s">
+                        <a href="index.html"><img style="width: 40%" src="img/bh_logo.png"></a>
+                    </div>
 
-                <h1 style="padding-bottom: 0px;margin-bottom: 10px ;" class="wow fadeInUp" data-wow-duration="1s"
-                    data-wow-delay="1.7s">
-                    Md. Babul Hasan Noyon
-                </h1>
+                    <h1 style="padding-bottom: 0px;margin-bottom: 10px ;" class="wow fadeInUp" data-wow-duration="2s"
+                        data-wow-delay="1.7s">
+                        Md. Babul Hasan Noyon
+                    </h1>
 
-                <div class="designation mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay="2.1s">
-                    B.Sc.(Engg.) in
-                    <span class="designer">
+                    <div class="designation mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay="3s">
+                        B.Sc.(Engg.) in
+                        <span class="designer">
                             CSE, PSTU
                         </span>
 
-                </div>
-
-
-                <a href="https://bhyeanhasan.blogspot.com" class="primary-btn"
-                   data-text="Visit My Blog" target="_blank">
-                    <span>M</span>
-                    <span>y</span>
-                    <span></span>
-                    <span>B</span>
-                    <span>l</span>
-                    <span>o</span>
-                    <span>g</span>
-                </a>
-
-            </div>
-
-            <div class=" col-lg-6 col-md-6 align-self-end">
-                <img class="img-fluid" src="img/newbg.png" alt="Md. Babul Hasan (Noyon) bhyeanhasan">
-            </div>
-
-        </div>
-    </div>
-</section>
-<!-- End -->
-
-
-<!-- Social Links -->
-<section class="brands-area mb-5">
-    <div class="container mt-5">
-        <div class="brand-wrap">
-            <div class="row align-items-center active-brand-carusel justify-content-start no-gutters">
-                <div class="col single-brand">
-                    <h4><a style="color: #e45447" target="_blank" href="https://github.com/bhyeanhasan"><i
-                            class="fa fa-github-square" aria-hidden="true"></i><br>
-                        GitHub
-                    </a></h4>
-                </div>
-
-                <div class="col single-brand">
-                    <h4><a style="color: #e45447" target="_blank" href="https://www.linkedin.com/in/bhyeanhasan/"><i
-                            class="fa fa-linkedin-square" aria-hidden="true"></i><br>
-                        linkedin
-                    </a></h4>
-                </div>
-
-                <div class="col single-brand">
-                    <h4><a style="color: #e45447" target="_blank" href="https://www.facebook.com/bhyeanhasan/"><i
-                            class="fa fa-facebook-square" aria-hidden="true"></i><br>
-                        facebook
-                    </a></h4>
-                </div>
-
-                <div class="col single-brand">
-                    <h4><a style="color: #e45447" target="_blank" href="https://twitter.com/bhyeanhasan"><i class="fa fa-twitter-square"
-                                                                                     aria-hidden="true"></i><br>
-                        twitter
-                    </a></h4>
-                </div>
-
-
-                <div class="col single-brand">
-                    <h4><a style="color: #e45447" target="_blank" href="https://www.instagram.com/bhyeanhasan/"><i class="fa fa-instagram"
-                                                                                            aria-hidden="true"></i><br>
-                        instagram
-                    </a></h4>
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End -->
-
-
-<!-- About Myself -->
-<section class="about-area mt-5">
-    <div class="container">
-        <div class="row align-items-center justify-content-between">
-
-            <div class="col-lg-6 about-left p-4">
-                <img style="border: medium;border-radius: 50px; height: 450px" class=""
-                     src="img/deffence1.jpeg" alt="Md. Babul Hasan (Noyon) bhyeanhasan">
-            </div>
-
-            <div class="col-lg-5 col-md-12 about-right">
-
-                <div class="section-title">
-                    <h2>about myself</h2>
-                </div>
-
-                <a href="https://github.com/bhyeanhasan" class="btn-block primary-btn white my-1"
-                   data-text="Projects and Works"
-                   target="_blank">
-                    <span>G</span>
-                    <span>i</span>
-                    <span>t</span>
-                    <span>h</span>
-                    <span>u</span>
-                    <span>b</span>
-                    <span></span>
-                    <span>P</span>
-                    <span>r</span>
-                    <span>o</span>
-                    <span>f</span>
-                    <span>i</span>
-                    <span>l</span>
-                    <span>l</span>
-                    <span>e</span>
-                </a>
-
-
-                <br>
-                <br>
-                <a href="Resume_Professional.html" class="btn-block primary-btn my-1" data-text="Resume"
-                   target="_blank">
-                    <span>R</span>
-                    <span>e</span>
-                    <span>s</span>
-                    <span>u</span>
-                    <span>m</span>
-                    <span>e</span>
-                </a>
-
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End -->
-
-<!-- Experience -->
-<section class="job-area mb-5 mt-5">
-    <div class="container">
-
-        <div class="row d-flex">
-            <div class="col-lg-12">
-                <div class="section-title">
-                    <h2>Experiences</h2>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-
-            <div class="col-md-12">
-                <div class="experience-border p-5 my-2">
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h3> ML & Backend Engineer (Intern) </h3>
-                            <h5><a href="https://www.intelsense.ai/">Intelsense AI</a></h5>
-                        </div>
-                        <div class="col-md-6 text-right">
-                            <h5> April 2024- Present</h5>
-                            <h5> Django, FastAPI, Machine Learning</h5>
-                        </div>
                     </div>
 
 
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div class="experience-border p-5 my-2">
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h3> Research Assistant </h3>
-                            <h5> Manash Sarker , Assistant Professor (PSTU) </h5>
-                        </div>
-                        <div class="col-md-6 text-right">
-                            <h5> March 2023- Present </h5>
-                            <h5> Deep Learning, Data Analysis, Traffic Prediction, Time Series</h5>
-                        </div>
-
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div class="experience-border p-5 mt-2 mb-5">
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h3> ICU Monitoring System (IOT) </h3>
-                            <h5> Professor Md. Naimur Rahman , (PSTU) </h5>
-
-                        </div>
-                        <div class="col-md-6 text-right">
-                            <h5> July 2023- July 2024</h5>
-                            <h5> Raspberry Pi, Arduino, Sensors, React, Socket
-                                Programming, Django Channel, Channel Layers.</h5>
-                        </div>
-                        <div class="col-md-12 text-center mt-2 m">
-                            <h4> Granted By </h4>
-                            <h5> Bangladesh Bureau of Educational Information & Statistics, (BANBEIS)</h5>
-                            <h5>Ministry of Education, Bangladesh </h5>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-
-
-        </div>
-
-    </div>
-</section>
-<!-- Experience -->
-
-
-<!-- Educational Qualification -->
-<section class="job-area mb-5 mt-5">
-    <div class="container">
-
-        <div class="row d-flex">
-            <div class="col-lg-12">
-                <div class="section-title">
-                    <h2>Educational Qualification</h2>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-
-            <div class="col-md-6">
-                <div class="single-job">
-
-                    <div class="justify-content-between">
-                        <div class="top-left text-center">
-                            <h4>Patuakhali Science and Technology University</h4>
-                            <p>Faculty of Computer Science and Engineering</p>
-                        </div>
-                    </div>
-
-                    <div class="justify-content-between">
-                        <div class="top-left text-center" style="text-align: center">
-                            <a target="_blank" href="http://www.pstu.ac.bd/" class="primary-btn"
-                               data-text="B.Sc. Engineering in CSE">
-                                <span>B.</span>
-                                <span>S</span>
-                                <span>c</span>
-                                <span></span>
-                                <span>E</span>
-                                <span>n</span>
-                                <span>g</span>
-                                <span>i</span>
-                                <span>n</span>
-                                <span>e</span>
-                                <span>e</span>
-                                <span>r</span>
-                                <span>i</span>
-                                <span>n</span>
-                                <span>g</span>
-                                <span></span>
-                                <span>I</span>
-                                <span>n</span>
-                                <span></span>
-                                <span>C</span>
-                                <span>S</span>
-                                <span>E</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="bottom-sec wow fadeIn" data-wow-duration="2s">
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="single-job">
-                    <div class="justify-content-between">
-                        <div class="top-left text-center">
-                            <h4>Govt. Syed Hatem Ali College</h4>
-                            <h4>Barishal</h4>
-                            <p>Science Group</p>
-                        </div>
-                    </div>
-                    <div class="justify-content-between">
-                        <div class="top-left text-center" style="text-align: center">
-                            <a target="_blank" href="http://www.gshac.gov.bd" class="primary-btn" data-text="H. S. C.">
-                                <span>H</span><span>S</span><span>C</span>
-
-
-                            </a>
-                        </div>
-
-                    </div>
-
-                    <div class="bottom-sec wow fadeIn" data-wow-duration="2s">
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="single-job">
-                    <div class="justify-content-between">
-                        <div class="top-left text-center">
-                            <h4>Jhalokathi Govt. High School</h4>
-                            <h4>Jhalokathi</h4>
-                            <p>Science Group</p>
-                        </div>
-                    </div>
-                    <div class="justify-content-between">
-                        <div class="top-left text-center" style="text-align: center">
-                            <a target="_blank" href="http://www.barisalboard.gov.bd/101633/news.html"
-                               class="primary-btn" data-text="J.S.C. & S.S.C.">
-                                <span>J</span><span>S</span><span>C</span>
-                                <span>&</span>
-                                <span>S</span><span>S</span><span>C</span>
-
-
-                            </a>
-                        </div>
-
-                    </div>
-
-                    <div class="bottom-sec wow fadeIn" data-wow-duration="2s">
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="single-job">
-                    <div class="justify-content-between">
-                        <div class="top-left text-center">
-                            <h4>Mirzapur Govt. Primary School</h4>
-                            <h4>Jhalokathi</h4>
-                            <p>Ponabalia,Mirzapur</p>
-                        </div>
-                    </div>
-                    <div class="justify-content-between">
-                        <div class="top-left text-center" style="text-align: center">
-                            <a target="_blank" href="#" class="primary-btn" data-text="P.S.C">
-                                <span>P</span>
-                                <span>S</span>
-                                <span>C</span>
-
-                            </a>
-                        </div>
-
-                    </div>
-
-                    <div class="bottom-sec wow fadeIn" data-wow-duration="2s">
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-<!-- Educational Qualification -->
-
-
-<!-- Certificates -->
-<section class="job-area mb-5 mt-5">
-    <div class="container">
-
-        <div class="row d-flex">
-            <div class="col-lg-12">
-                <div class="section-title">
-                    <h2>Selected Courses & Certificates</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Carousel indicators -->
-                    <ol class="carousel-indicators">
-
-                        <li data-target="#myCarousel" data-slide-to="0" class="active">1</li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                        <li data-target="#myCarousel" data-slide-to="3"></li>
-                        <li data-target="#myCarousel" data-slide-to="4"></li>
-                        <li data-target="#myCarousel" data-slide-to="5"></li>
-                        <li data-target="#myCarousel" data-slide-to="6"></li>
-                        <li data-target="#myCarousel" data-slide-to="7"></li>
-                        <li data-target="#myCarousel" data-slide-to="8"></li>
-                        <li data-target="#myCarousel" data-slide-to="9"></li>
-                        <li data-target="#myCarousel" data-slide-to="10"></li>
-                        <li data-target="#myCarousel" data-slide-to="11"></li>
-                        <li data-target="#myCarousel" data-slide-to="12"></li>
-                        <li data-target="#myCarousel" data-slide-to="13"></li>
-                        <li data-target="#myCarousel" data-slide-to="14"></li>
-                        <li data-target="#myCarousel" data-slide-to="15"></li>
-                        <li data-target="#myCarousel" data-slide-to="16"></li>
-                        <li data-target="#myCarousel" data-slide-to="17"></li>
-                        <li data-target="#myCarousel" data-slide-to="18"></li>
-                        <li data-target="#myCarousel" data-slide-to="19"></li>
-                        <li data-target="#myCarousel" data-slide-to="20"></li>
-                        <li data-target="#myCarousel" data-slide-to="21"></li>
-                        <li data-target="#myCarousel" data-slide-to="22"></li>
-                        <li data-target="#myCarousel" data-slide-to="23"></li>
-                        <li data-target="#myCarousel" data-slide-to="24"></li>
-                        <li data-target="#myCarousel" data-slide-to="25"></li>
-                        <li data-target="#myCarousel" data-slide-to="26"></li>
-                    </ol>
-                    <!-- Wrapper for carousel items -->
-                    <div class="carousel-inner">
-
-                        <div class="item active">
-                            <img src="https://iili.io/RWVi0b.png" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="img/certificate/2.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="img/certificate/3.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="img/certificate/4.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="img/certificate/5.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="img/certificate/6.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="img/certificate/7.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="img/certificate/8.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="img/certificate/9.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="img/certificate/b1.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="img/certificate/b2.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="https://iili.io/RWVyLF.png" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="https://iili.io/RWWHqg.png" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="img/certificate/c1.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="img/certificate/c2.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="img/certificate/c3.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="img/certificate/c4.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="img/certificate/c5.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="img/certificate/c6.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="img/certificate/c7.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="img/certificate/d1.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="img/certificate/d2.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="img/certificate/d3.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="img/certificate/d4.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="img/certificate/d5.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="img/certificate/d6.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="img/certificate/d7.jpg" alt="">
-                        </div>
-
-
-                    </div>
-                    <!-- Carousel controls -->
-                    <a href="#myCarousel" data-slide="prev">
-                        <button type="button" class="mt-3 btn btn-outline-warning"><span><i
-                                class="fa fa-angle-left"></i> Previous</span></button>
+                    <a href="https://bhyeanhasan.blogspot.com" class="primary-btn"
+                       data-text="Visit My Blog" target="_blank">
+                        <span>M</span>
+                        <span>y</span>
+                        <span></span>
+                        <span>B</span>
+                        <span>l</span>
+                        <span>o</span>
+                        <span>g</span>
                     </a>
-                    <a style="float: right;" class="" href="#myCarousel" data-slide="next">
-                        <button type="button" class="mt-3 btn btn-outline-warning"><span><i
-                                class="fa fa-angle-right"></i> Next</span></button>
+
+                </div>
+
+                <div class=" col-lg-6 col-md-6 align-self-end">
+                    <img class="img-fluid" src="img/newbg.png" alt="Md. Babul Hasan (Noyon) bhyeanhasan">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End -->
 
 
-                    </a>
+    <!-- Social Links -->
+    <section class="brands-area mb-5">
+        <div class="container mt-5">
+            <div class="brand-wrap">
+                <div class="row align-items-center active-brand-carusel justify-content-start no-gutters">
+                    <div class="col single-brand">
+                        <h4><a style="color: #e45447" target="_blank" href="https://github.com/bhyeanhasan"><i
+                                class="fa fa-github-square" aria-hidden="true"></i><br>
+                            GitHub
+                        </a></h4>
+                    </div>
+
+                    <div class="col single-brand">
+                        <h4><a style="color: #e45447" target="_blank" href="https://www.linkedin.com/in/bhyeanhasan/"><i
+                                class="fa fa-linkedin-square" aria-hidden="true"></i><br>
+                            linkedin
+                        </a></h4>
+                    </div>
+
+                    <div class="col single-brand">
+                        <h4><a style="color: #e45447" target="_blank" href="https://www.facebook.com/bhyeanhasan/"><i
+                                class="fa fa-facebook-square" aria-hidden="true"></i><br>
+                            facebook
+                        </a></h4>
+                    </div>
+
+                    <div class="col single-brand">
+                        <h4><a style="color: #e45447" target="_blank" href="https://twitter.com/bhyeanhasan"><i
+                                class="fa fa-twitter-square"
+                                aria-hidden="true"></i><br>
+                            twitter
+                        </a></h4>
+                    </div>
+
+
+                    <div class="col single-brand">
+                        <h4><a style="color: #e45447" target="_blank" href="https://www.instagram.com/bhyeanhasan/"><i
+                                class="fa fa-instagram"
+                                aria-hidden="true"></i><br>
+                            instagram
+                        </a></h4>
+                    </div>
+
+
                 </div>
             </div>
         </div>
+    </section>
+    <!-- End -->
 
 
-    </div>
-</section>
-<!-- Certificates -->
+    <!-- About Myself -->
+    <section class="about-area mt-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
 
-
-<!-- Programming -->
-<section style="background-color: white" class="service-area py-5">
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title">
-                    <h2>Programming Profile</h2>
+                <div class="col-lg-6 about-left p-4">
+                    <img style="border: medium;border-radius: 50px; height: 450px" class=""
+                         src="img/deffence1.jpeg" alt="Md. Babul Hasan (Noyon) bhyeanhasan">
                 </div>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-lg-3 col-md-6">
-                <div class="single-service wow fadeInUp text-center" data-wow-duration="1s">
-                    <img style="width: 90%;height: 80px" src="https://iili.io/oT0jj9.png" alt=""><br>
-                    <a target="_blank" href="https://codeforces.com/profile/bhyean" class="primary-btn mt-50"
-                       data-text="Code Forces">
+                <div class="col-lg-5 col-md-12 about-right">
+
+                    <div class="section-title">
+                        <h2>about myself</h2>
+                    </div>
+
+                    <a href="https://github.com/bhyeanhasan" class="btn-block primary-btn white my-1"
+                       data-text="Projects and Works"
+                       target="_blank">
+                        <span>G</span>
+                        <span>i</span>
+                        <span>t</span>
+                        <span>h</span>
+                        <span>u</span>
+                        <span>b</span>
+                        <span></span>
                         <span>P</span>
                         <span>r</span>
                         <span>o</span>
                         <span>f</span>
                         <span>i</span>
                         <span>l</span>
-                        <span>e</span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="single-service wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-
-                    <img style="height: 80px"
-                         src="https://cdn.iconscout.com/icon/free/png-256/free-leetcode-3521542-2944960.png?f=webp"
-                         alt=""><br>
-
-                    <a target="_blank" href="https://leetcode.com/bhyeanhasan/" class="primary-btn mt-50"
-                       data-text="LeetCode">
-                        <span>P</span>
-                        <span>r</span>
-                        <span>o</span>
-                        <span>f</span>
-                        <span>i</span>
-                        <span>l</span>
-                        <span>e</span>
-                    </a>
-
-                </div>
-
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-                <div class="single-service wow fadeInUp text-center" data-wow-duration="1s" data-wow-delay="0.6s">
-                    <img style="width: 110%;height: 80px" src="img/hack.svg" alt=""><br>
-                    <a target="_blank" href="https://www.hackerrank.com/bhyeanhasan"
-                       class="primary-btn mt-50 bg-dark" data-text="Hacker Rank">
-
-                        <span>P</span>
-                        <span>r</span>
-                        <span>o</span>
-                        <span>f</span>
-                        <span>i</span>
-                        <span>l</span>
-                        <span>e</span>
-                    </a>
-
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-                <div class="single-service wow fadeInUp text-center" data-wow-duration="1s" data-wow-delay="0.4s">
-                    <img style="height: 80px" src="https://iili.io/oT0WpS.png" alt=""><br>
-                    <a target="_blank" href="https://www.urionlinejudge.com.br/judge/en/profile/312468"
-                       class="primary-btn mt-50" data-text="URI">
-
-                        <span>P</span>
-                        <span>r</span>
-                        <span>o</span>
-                        <span>f</span>
-                        <span>i</span>
                         <span>l</span>
                         <span>e</span>
                     </a>
 
 
+                    <br>
+                    <br>
+                    <a href="Resume_Professional.html" class="btn-block primary-btn my-1" data-text="Resume"
+                       target="_blank">
+                        <span>R</span>
+                        <span>e</span>
+                        <span>s</span>
+                        <span>u</span>
+                        <span>m</span>
+                        <span>e</span>
+                    </a>
+
                 </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-<!-- Programming -->
-
-<!--Academic achievements & Awards-->
-<section class="about-area my-5">
-    <div class="container">
-        <div class="row align-items-center justify-content-between">
-            <div class="col-md-12">
-                <div class="section-title">
-                    <h2>Academic achievements & Awards</h2>
-                </div>
-            </div>
-
-
-            <div class="col-lg-5 about-left p-3">
-                <img style="border: medium;border-radius: 10px; height: 350px" class="img-fluid"
-                     src="img/Activity&Award/runnerup.jpg" alt="Formal Picture">
-            </div>
-
-            <div class="col-lg-6 col-md-12 about-right">
-
-
-                <a href="#" class="btn-block primary-btn my-1" data-text="Runner-Up in Project Showcasing"
-                   target="_blank">
-                    <span>PSTU</span>
-                    <span></span>
-                    <span>IT Carnival 2019</span>
-                </a>
-
-                <br>
-
-
-                <a href="#" class="btn-block primary-btn white my-1" data-text="Education Board Scholarship"
-                   target="_blank">
-                    <span>PSC</span>
-                    <span></span>
-                    <span>JSC</span>
-                    <span></span>
-                    <span>SSC</span>
-                </a>
-                <br>
-                <a href="#" class="btn-block primary-btn white my-1" data-text="Aungkur scholarship"
-                   target="_blank">
-                    <span>2019</span>
-                    <span></span>
-                    <span>2020</span>
-                    <span></span>
-                    <span>2021</span>
-                </a>
-                <br>
-                <a href="#" class="btn-block primary-btn white my-1" data-text="One Bank scholarship"
-                   target="_blank">
-                    <span>2019</span>
-                    <span></span>
-                    <span>2020</span>
-                </a>
-                <br>
-                <a href="#" class="btn-block primary-btn white my-1" data-text="Grameen Bank Scholarship"
-                   target="_blank">
-                    <span>2014</span>
-                    <span></span>
-                    <span>2016</span>
-                    <span></span>
-                    <span>2019</span>
-                </a>
-
-
             </div>
         </div>
-    </div>
-</section>
-<!--Academic achievements & Awards:-->
+    </section>
+    <!-- End -->
 
-<!-- Extracurricular activities -->
-<section class="job-area">
-    <div class="container">
+    <!-- Experience -->
+    <section class="job-area mb-5 mt-5">
+        <div class="container">
 
-
-        <div class="section-title pt-5">
-            <h2>Extracurricular activities</h2>
-        </div>
-
-        <div class="row">
-
-            <div class="col-lg-4 col-md-6">
-                <div class="single-service wow fadeInUp text-center" data-wow-duration="1s">
-                    <img style="border: medium;border-radius: 20px;width: 100%;height: 300px"
-                         src="https://iili.io/oTEVz7.png" alt=""><br>
-                    <a target="_blank" href="https://codeforces.com/profile/bhyean"
-                       class="btn-block primary-btn mt-3 white" data-text="Satyen Bose Science Club BUET">
-                        <span>Campus Ambassador</span>
-                    </a>
+            <div class="row d-flex">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Experiences</h2>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="single-service wow fadeInUp text-center" data-wow-duration="1s">
-                    <img style="border: medium;border-radius: 20px;width: 100%;height: 300px"
-                         src="img/Activity&Award/bncc.jpg" alt=""><br>
-                    <a target="_blank" href="https://codeforces.com/profile/bhyean"
-                       class="btn-block primary-btn mt-3 white" data-text="BNCC—PSTU (Naval Wing)">
-                        <span>Cadet</span>
-                    </a>
-                </div>
-            </div>
+            <div class="row">
 
-            <div class="col-lg-4 col-md-6">
-                <div class="single-service wow fadeInUp text-center" data-wow-duration="1s">
-                    <img style="border: medium;border-radius: 20px;width: 100%;height: 300px"
-                         src="https://iili.io/oTEYfs.jpg" alt=""><br>
-                    <a target="_blank" href="https://codeforces.com/profile/bhyean"
-                       class="btn-block primary-btn mt-3 white" data-text="Bangladesh Flying Labs">
-                        <span>Volunteer</span>
-                    </a>
-                </div>
-            </div>
+                <div class="col-md-12">
+                    <div class="experience-border p-5 my-2">
 
-
-            <div class="col-lg-4 col-md-6">
-                <div class="single-service wow fadeInUp text-center" data-wow-duration="1s">
-                    <img style="border: medium;border-radius: 20px;width: 100%;height: 300px"
-                         src="img/Activity&Award/education_ollympiad.jpg" alt=""><br>
-                    <a target="_blank" href="https://codeforces.com/profile/bhyean"
-                       class="btn-block primary-btn mt-3 white" data-text="Education Olympiad">
-                        <span>Campus Ambassador</span>
-                    </a>
-                </div>
-            </div>
-
-
-            <div class="col-lg-4 col-md-6">
-                <div class="single-service wow fadeInUp text-center" data-wow-duration="1s">
-                    <img style="border: medium;border-radius: 20px;width: 100%;height: 300px"
-                         src="img/Activity&Award/pstucc.jpg" alt=""><br>
-                    <a target="_blank" href="https://codeforces.com/profile/bhyean"
-                       class="btn-block primary-btn mt-3 white" data-text="PSTU Career Club">
-                        <span>Faculty Ambassador</span>
-                    </a>
-                </div>
-            </div>
-
-
-            <div class="col-lg-4 col-md-6">
-                <div class="single-service wow fadeInUp text-center" data-wow-duration="1s">
-                    <img style="border: medium;border-radius: 20px;width: 100%;height: 300px"
-                         src="img/Activity&Award/bnec.jpg" alt=""><br>
-                    <a target="_blank" href="https://codeforces.com/profile/bhyean"
-                       class="btn-block primary-btn mt-3 white" data-text="BUET Nuclear Engineering Club">
-                        <span>Associate</span>
-                    </a>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-</section>
-<!-- Extracurricular activities -->
-
-<!-- My Projects -->
-<section class="job-area py-5" id="work">
-    <div class="container">
-        <div class="row d-flex justify-content-between align-items-end ">
-            <div class="col-lg-12">
-                <div class="section-title">
-                    <h2>My Projects</h2>
-                </div>
-            </div>
-
-            <div class="col-md-12 mb-3">
-
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-md-6">
-                            <iframe class="project-panel" width="100%" height="350"
-                                    src="https://www.youtube.com/embed/uJ3zJL74lCc" title="YouTube video player"
-                                    frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen></iframe>
-
-                        </div>
-                        <div class="col-md-6">
-                            <iframe class="project-panel" width="100%" height="350"
-                                    src="https://www.youtube.com/embed/WOaj2wl5tMo" title="YouTube video player"
-                                    frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen></iframe>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3> ML & Backend Engineer (Intern) </h3>
+                                <h5><a href="https://www.intelsense.ai/">Intelsense AI</a></h5>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <h5> April 2024- Present</h5>
+                                <h5> Django, FastAPI, Machine Learning</h5>
+                            </div>
                         </div>
 
-                        <div class="col-md-6">
-                            <iframe class="project-panel" width="100%" height="350"
-                                    src="https://www.youtube.com/embed/_HBHg3EapSk?si=qte11XQOa0BJkjR3"
-                                    title="YouTube video player"
-                                    frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen></iframe>
+
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="experience-border p-5 my-2">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3> Research Assistant </h3>
+                                <h5> Manash Sarker , Assistant Professor (PSTU) </h5>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <h5> March 2023- Present </h5>
+                                <h5> Deep Learning, Data Analysis, Traffic Prediction, Time Series</h5>
+                            </div>
+
                         </div>
 
-                        <div class="col-md-6">
-                            <iframe class="project-panel" width="100%" height="350"
-                                    src="https://www.youtube.com/embed/tzeR-nMvfPs?si=SdIowM94tTnNIwbS"
-                                    title="YouTube video player"
-                                    frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen></iframe>
+
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="experience-border p-5 mt-2 mb-5">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3> ICU Monitoring System (IOT) </h3>
+                                <h5> Professor Md. Naimur Rahman , (PSTU) </h5>
+
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <h5> July 2023- July 2024</h5>
+                                <h5> Raspberry Pi, Arduino, Sensors, React, Socket
+                                    Programming, Django Channel, Channel Layers.</h5>
+                            </div>
+                            <div class="col-md-12 text-center mt-2 m">
+                                <h4> Granted By </h4>
+                                <h5> Bangladesh Bureau of Educational Information & Statistics, (BANBEIS)</h5>
+                                <h5>Ministry of Education, Bangladesh </h5>
+                            </div>
                         </div>
 
 
@@ -884,77 +317,707 @@
 
             </div>
 
+        </div>
+    </section>
+    <!-- Experience -->
 
-            <div class="col-lg-12 mt-5">
-                <div class="section-title my-5">
-                    <h2>My Repositories</h2>
-                </div>
-            </div>
 
-            <div class="col-md-12 p-0 m-0">
-                <div class="single-job ">
-                    <!-- <h1 class="mb-3"><a href="https://github.com/bhyeanhasan" target="_blank">github/bhyeanhasan</a></h1> -->
-                    <div class="github-widget" data-user="bhyeanhasan" data-options='{"forks":true}'></div>
+    <!-- Educational Qualification -->
+    <section class="job-area mb-5 mt-5">
+        <div class="container">
 
-                    <div class="bottom-sec wow fadeIn" data-wow-duration="2s">
-
+            <div class="row d-flex">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Educational Qualification</h2>
                     </div>
                 </div>
             </div>
 
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="single-job">
+
+                        <div class="justify-content-between">
+                            <div class="top-left text-center">
+                                <h4>Patuakhali Science and Technology University</h4>
+                                <p>Faculty of Computer Science and Engineering</p>
+                            </div>
+                        </div>
+
+                        <div class="justify-content-between">
+                            <div class="top-left text-center" style="text-align: center">
+                                <a target="_blank" href="http://www.pstu.ac.bd/" class="primary-btn"
+                                   data-text="B.Sc. Engineering in CSE">
+                                    <span>B.</span>
+                                    <span>S</span>
+                                    <span>c</span>
+                                    <span></span>
+                                    <span>E</span>
+                                    <span>n</span>
+                                    <span>g</span>
+                                    <span>i</span>
+                                    <span>n</span>
+                                    <span>e</span>
+                                    <span>e</span>
+                                    <span>r</span>
+                                    <span>i</span>
+                                    <span>n</span>
+                                    <span>g</span>
+                                    <span></span>
+                                    <span>I</span>
+                                    <span>n</span>
+                                    <span></span>
+                                    <span>C</span>
+                                    <span>S</span>
+                                    <span>E</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bottom-sec wow fadeIn" data-wow-duration="2s">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="single-job">
+                        <div class="justify-content-between">
+                            <div class="top-left text-center">
+                                <h4>Govt. Syed Hatem Ali College</h4>
+                                <h4>Barishal</h4>
+                                <p>Science Group</p>
+                            </div>
+                        </div>
+                        <div class="justify-content-between">
+                            <div class="top-left text-center" style="text-align: center">
+                                <a target="_blank" href="http://www.gshac.gov.bd" class="primary-btn"
+                                   data-text="H. S. C.">
+                                    <span>H</span><span>S</span><span>C</span>
+
+
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="bottom-sec wow fadeIn" data-wow-duration="2s">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="single-job">
+                        <div class="justify-content-between">
+                            <div class="top-left text-center">
+                                <h4>Jhalokathi Govt. High School</h4>
+                                <h4>Jhalokathi</h4>
+                                <p>Science Group</p>
+                            </div>
+                        </div>
+                        <div class="justify-content-between">
+                            <div class="top-left text-center" style="text-align: center">
+                                <a target="_blank" href="http://www.barisalboard.gov.bd/101633/news.html"
+                                   class="primary-btn" data-text="J.S.C. & S.S.C.">
+                                    <span>J</span><span>S</span><span>C</span>
+                                    <span>&</span>
+                                    <span>S</span><span>S</span><span>C</span>
+
+
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="bottom-sec wow fadeIn" data-wow-duration="2s">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="single-job">
+                        <div class="justify-content-between">
+                            <div class="top-left text-center">
+                                <h4>Mirzapur Govt. Primary School</h4>
+                                <h4>Jhalokathi</h4>
+                                <p>Ponabalia,Mirzapur</p>
+                            </div>
+                        </div>
+                        <div class="justify-content-between">
+                            <div class="top-left text-center" style="text-align: center">
+                                <a target="_blank" href="#" class="primary-btn" data-text="P.S.C">
+                                    <span>P</span>
+                                    <span>S</span>
+                                    <span>C</span>
+
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="bottom-sec wow fadeIn" data-wow-duration="2s">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-
-    </div>
-</section>
-<!-- My Projects -->
+    </section>
+    <!-- Educational Qualification -->
 
 
-<!-- start footer Area -->
-<footer class="footer-area" style="margin: 0px; padding: 0px">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-12">
-                <div class="footer-top flex-column mt-3">
-                    <div class="footer-logo">
-                        <a href="#">
-                            <img src="img/bh_logo.png" alt="">
+    <!-- Certificates -->
+    <section class="job-area mb-5 mt-5">
+        <div class="container">
+
+            <div class="row d-flex">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Selected Courses & Certificates</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+
+                            <li data-target="#myCarousel" data-slide-to="0" class="active">1</li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                            <li data-target="#myCarousel" data-slide-to="5"></li>
+                            <li data-target="#myCarousel" data-slide-to="6"></li>
+                            <li data-target="#myCarousel" data-slide-to="7"></li>
+                            <li data-target="#myCarousel" data-slide-to="8"></li>
+                            <li data-target="#myCarousel" data-slide-to="9"></li>
+                            <li data-target="#myCarousel" data-slide-to="10"></li>
+                            <li data-target="#myCarousel" data-slide-to="11"></li>
+                            <li data-target="#myCarousel" data-slide-to="12"></li>
+                            <li data-target="#myCarousel" data-slide-to="13"></li>
+                            <li data-target="#myCarousel" data-slide-to="14"></li>
+                            <li data-target="#myCarousel" data-slide-to="15"></li>
+                            <li data-target="#myCarousel" data-slide-to="16"></li>
+                            <li data-target="#myCarousel" data-slide-to="17"></li>
+                            <li data-target="#myCarousel" data-slide-to="18"></li>
+                            <li data-target="#myCarousel" data-slide-to="19"></li>
+                            <li data-target="#myCarousel" data-slide-to="20"></li>
+                            <li data-target="#myCarousel" data-slide-to="21"></li>
+                            <li data-target="#myCarousel" data-slide-to="22"></li>
+                            <li data-target="#myCarousel" data-slide-to="23"></li>
+                            <li data-target="#myCarousel" data-slide-to="24"></li>
+                            <li data-target="#myCarousel" data-slide-to="25"></li>
+                            <li data-target="#myCarousel" data-slide-to="26"></li>
+                        </ol>
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+
+                            <div class="item active">
+                                <img src="https://iili.io/RWVi0b.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/certificate/2.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/certificate/3.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/certificate/4.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/certificate/5.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/certificate/6.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/certificate/7.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/certificate/8.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/certificate/9.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/certificate/b1.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/certificate/b2.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="https://iili.io/RWVyLF.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="https://iili.io/RWWHqg.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/certificate/c1.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/certificate/c2.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/certificate/c3.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/certificate/c4.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/certificate/c5.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/certificate/c6.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/certificate/c7.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/certificate/d1.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/certificate/d2.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/certificate/d3.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/certificate/d4.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/certificate/d5.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/certificate/d6.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="img/certificate/d7.jpg" alt="">
+                            </div>
+
+
+                        </div>
+                        <!-- Carousel controls -->
+                        <a href="#myCarousel" data-slide="prev">
+                            <button type="button" class="mt-3 btn btn-outline-warning"><span><i
+                                    class="fa fa-angle-left"></i> Previous</span></button>
                         </a>
-                        <h3 class="p-2">Thanks for Visiting</h3>
+                        <a style="float: right;" class="" href="#myCarousel" data-slide="next">
+                            <button type="button" class="mt-3 btn btn-outline-warning"><span><i
+                                    class="fa fa-angle-right"></i> Next</span></button>
+
+
+                        </a>
                     </div>
-                    <!--                        <div class="footer-social">-->
-                    <!--                            <a target="_blank" href="https://www.facebook.com/bhyeanhasan"><i-->
-                    <!--                                    class="fa fa-facebook"></i></a>-->
-                    <!--                            <a target="_blank" href="https://twitter.com/bhyeanhasan"><i class="fa fa-twitter"></i></a>-->
-                    <!--                            <a target="_blank" href="https://www.linkedin.com/in/bhyeanhasan/"><i-->
-                    <!--                                    class="fa fa-linkedin"></i></a>-->
-                    <!--                            <a target="_blank" href="https://www.instagram.com/bhyeanhasan/"><i-->
-                    <!--                                    class="fa fa-instagram"></i></a>-->
-                    <!--                        </div>-->
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- Certificates -->
+
+
+    <!-- Programming -->
+    <section style="background-color: white" class="service-area py-5">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Programming Profile</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-service wow fadeInUp text-center" data-wow-duration="1s">
+                        <img style="width: 90%;height: 80px" src="https://iili.io/oT0jj9.png" alt=""><br>
+                        <a target="_blank" href="https://codeforces.com/profile/bhyean" class="primary-btn mt-50"
+                           data-text="Code Forces">
+                            <span>P</span>
+                            <span>r</span>
+                            <span>o</span>
+                            <span>f</span>
+                            <span>i</span>
+                            <span>l</span>
+                            <span>e</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="single-service wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+
+                        <img style="height: 80px"
+                             src="https://cdn.iconscout.com/icon/free/png-256/free-leetcode-3521542-2944960.png?f=webp"
+                             alt=""><br>
+
+                        <a target="_blank" href="https://leetcode.com/bhyeanhasan/" class="primary-btn mt-50"
+                           data-text="LeetCode">
+                            <span>P</span>
+                            <span>r</span>
+                            <span>o</span>
+                            <span>f</span>
+                            <span>i</span>
+                            <span>l</span>
+                            <span>e</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-service wow fadeInUp text-center" data-wow-duration="1s" data-wow-delay="0.6s">
+                        <img style="width: 110%;height: 80px" src="img/hack.svg" alt=""><br>
+                        <a target="_blank" href="https://www.hackerrank.com/bhyeanhasan"
+                           class="primary-btn mt-50 bg-dark" data-text="Hacker Rank">
+
+                            <span>P</span>
+                            <span>r</span>
+                            <span>o</span>
+                            <span>f</span>
+                            <span>i</span>
+                            <span>l</span>
+                            <span>e</span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-service wow fadeInUp text-center" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <img style="height: 80px" src="https://iili.io/oT0WpS.png" alt=""><br>
+                        <a target="_blank" href="https://www.urionlinejudge.com.br/judge/en/profile/312468"
+                           class="primary-btn mt-50" data-text="URI">
+
+                            <span>P</span>
+                            <span>r</span>
+                            <span>o</span>
+                            <span>f</span>
+                            <span>i</span>
+                            <span>l</span>
+                            <span>e</span>
+                        </a>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Programming -->
+
+    <!--Academic achievements & Awards-->
+    <section class="about-area my-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h2>Academic achievements & Awards</h2>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-5 about-left p-3">
+                    <img style="border: medium;border-radius: 10px; height: 350px" class="img-fluid"
+                         src="img/Activity&Award/runnerup.jpg" alt="Formal Picture">
+                </div>
+
+                <div class="col-lg-6 col-md-12 about-right">
+
+
+                    <a href="#" class="btn-block primary-btn my-1" data-text="Runner-Up in Project Showcasing"
+                       target="_blank">
+                        <span>PSTU</span>
+                        <span></span>
+                        <span>IT Carnival 2019</span>
+                    </a>
+
+                    <br>
+
+
+                    <a href="#" class="btn-block primary-btn white my-1" data-text="Education Board Scholarship"
+                       target="_blank">
+                        <span>PSC</span>
+                        <span></span>
+                        <span>JSC</span>
+                        <span></span>
+                        <span>SSC</span>
+                    </a>
+                    <br>
+                    <a href="#" class="btn-block primary-btn white my-1" data-text="Aungkur scholarship"
+                       target="_blank">
+                        <span>2019</span>
+                        <span></span>
+                        <span>2020</span>
+                        <span></span>
+                        <span>2021</span>
+                    </a>
+                    <br>
+                    <a href="#" class="btn-block primary-btn white my-1" data-text="One Bank scholarship"
+                       target="_blank">
+                        <span>2019</span>
+                        <span></span>
+                        <span>2020</span>
+                    </a>
+                    <br>
+                    <a href="#" class="btn-block primary-btn white my-1" data-text="Grameen Bank Scholarship"
+                       target="_blank">
+                        <span>2014</span>
+                        <span></span>
+                        <span>2016</span>
+                        <span></span>
+                        <span>2019</span>
+                    </a>
+
+
                 </div>
             </div>
         </div>
-        <div class="row footer-bottom justify-content-center">
-            <p class="col-lg-8 col-sm-12 footer-text pb-4">
+    </section>
+    <!--Academic achievements & Awards:-->
+
+    <!-- Extracurricular activities -->
+    <section class="job-area">
+        <div class="container">
 
 
-                Copyright &copy;
-                <script>document.write(new Date().getFullYear());</script>
-                <br> All rights reserved <a href="https://about.me/bhyeanhasan" target="_blank">Md. Babul Hasan
-                (Noyon)</a>
-            </p>
+            <div class="section-title pt-5">
+                <h2>Extracurricular activities</h2>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service wow fadeInUp text-center" data-wow-duration="1s">
+                        <img style="border: medium;border-radius: 20px;width: 100%;height: 300px"
+                             src="https://iili.io/oTEVz7.png" alt=""><br>
+                        <a target="_blank" href="https://codeforces.com/profile/bhyean"
+                           class="btn-block primary-btn mt-3 white" data-text="Satyen Bose Science Club BUET">
+                            <span>Campus Ambassador</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service wow fadeInUp text-center" data-wow-duration="1s">
+                        <img style="border: medium;border-radius: 20px;width: 100%;height: 300px"
+                             src="img/Activity&Award/bncc.jpg" alt=""><br>
+                        <a target="_blank" href="https://codeforces.com/profile/bhyean"
+                           class="btn-block primary-btn mt-3 white" data-text="BNCC—PSTU (Naval Wing)">
+                            <span>Cadet</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service wow fadeInUp text-center" data-wow-duration="1s">
+                        <img style="border: medium;border-radius: 20px;width: 100%;height: 300px"
+                             src="https://iili.io/oTEYfs.jpg" alt=""><br>
+                        <a target="_blank" href="https://codeforces.com/profile/bhyean"
+                           class="btn-block primary-btn mt-3 white" data-text="Bangladesh Flying Labs">
+                            <span>Volunteer</span>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service wow fadeInUp text-center" data-wow-duration="1s">
+                        <img style="border: medium;border-radius: 20px;width: 100%;height: 300px"
+                             src="img/Activity&Award/education_ollympiad.jpg" alt=""><br>
+                        <a target="_blank" href="https://codeforces.com/profile/bhyean"
+                           class="btn-block primary-btn mt-3 white" data-text="Education Olympiad">
+                            <span>Campus Ambassador</span>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service wow fadeInUp text-center" data-wow-duration="1s">
+                        <img style="border: medium;border-radius: 20px;width: 100%;height: 300px"
+                             src="img/Activity&Award/pstucc.jpg" alt=""><br>
+                        <a target="_blank" href="https://codeforces.com/profile/bhyean"
+                           class="btn-block primary-btn mt-3 white" data-text="PSTU Career Club">
+                            <span>Faculty Ambassador</span>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service wow fadeInUp text-center" data-wow-duration="1s">
+                        <img style="border: medium;border-radius: 20px;width: 100%;height: 300px"
+                             src="img/Activity&Award/bnec.jpg" alt=""><br>
+                        <a target="_blank" href="https://codeforces.com/profile/bhyean"
+                           class="btn-block primary-btn mt-3 white" data-text="BUET Nuclear Engineering Club">
+                            <span>Associate</span>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- Extracurricular activities -->
+
+    <!-- My Projects -->
+    <section class="job-area py-5" id="work">
+        <div class="container">
+            <div class="row d-flex justify-content-between align-items-end ">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>My Projects</h2>
+                    </div>
+                </div>
+
+                <div class="col-md-12 mb-3">
+
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <iframe class="project-panel" width="100%" height="350"
+                                        src="https://www.youtube.com/embed/uJ3zJL74lCc" title="YouTube video player"
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen></iframe>
+
+                            </div>
+                            <div class="col-md-6">
+                                <iframe class="project-panel" width="100%" height="350"
+                                        src="https://www.youtube.com/embed/WOaj2wl5tMo" title="YouTube video player"
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen></iframe>
+                            </div>
+
+                            <div class="col-md-6">
+                                <iframe class="project-panel" width="100%" height="350"
+                                        src="https://www.youtube.com/embed/_HBHg3EapSk?si=qte11XQOa0BJkjR3"
+                                        title="YouTube video player"
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen></iframe>
+                            </div>
+
+                            <div class="col-md-6">
+                                <iframe class="project-panel" width="100%" height="350"
+                                        src="https://www.youtube.com/embed/tzeR-nMvfPs?si=SdIowM94tTnNIwbS"
+                                        title="YouTube video player"
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen></iframe>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="col-lg-12 mt-5">
+                    <div class="section-title my-5">
+                        <h2>My Repositories</h2>
+                    </div>
+                </div>
+
+                <div class="col-md-12 p-0 m-0">
+                    <div class="single-job ">
+                        <!-- <h1 class="mb-3"><a href="https://github.com/bhyeanhasan" target="_blank">github/bhyeanhasan</a></h1> -->
+                        <div class="github-widget" data-user="bhyeanhasan" data-options='{"forks":true}'></div>
+
+                        <div class="bottom-sec wow fadeIn" data-wow-duration="2s">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
         </div>
-    </div>
-</footer>
-<!-- End footer Area -->
+    </section>
+    <!-- My Projects -->
 
-<!-- ####################### Start Scroll to Top Area ####################### -->
-<div id="back-top">
-    <a title="Go to Top" href="#">
-        <i class="lnr lnr-arrow-up"></i>
-    </a>
+
+    <!-- start footer Area -->
+    <footer class="footer-area" style="margin: 0px; padding: 0px">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="footer-top flex-column mt-3">
+                        <div class="footer-logo">
+                            <a href="#">
+                                <img src="img/bh_logo.png" alt="">
+                            </a>
+                            <h3 class="p-2">Thanks for Visiting</h3>
+                        </div>
+                        <!--                        <div class="footer-social">-->
+                        <!--                            <a target="_blank" href="https://www.facebook.com/bhyeanhasan"><i-->
+                        <!--                                    class="fa fa-facebook"></i></a>-->
+                        <!--                            <a target="_blank" href="https://twitter.com/bhyeanhasan"><i class="fa fa-twitter"></i></a>-->
+                        <!--                            <a target="_blank" href="https://www.linkedin.com/in/bhyeanhasan/"><i-->
+                        <!--                                    class="fa fa-linkedin"></i></a>-->
+                        <!--                            <a target="_blank" href="https://www.instagram.com/bhyeanhasan/"><i-->
+                        <!--                                    class="fa fa-instagram"></i></a>-->
+                        <!--                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="row footer-bottom justify-content-center">
+                <p class="col-lg-8 col-sm-12 footer-text pb-4">
+
+
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script>
+                    <br> All rights reserved <a href="https://about.me/bhyeanhasan" target="_blank">Md. Babul Hasan
+                    (Noyon)</a>
+                </p>
+
+            </div>
+        </div>
+    </footer>
+    <!-- End footer Area -->
+
+    <!-- ####################### Start Scroll to Top Area ####################### -->
+    <div id="back-top">
+        <a title="Go to Top" href="#">
+            <i class="lnr lnr-arrow-up"></i>
+        </a>
+    </div>
+
+
+    <!-- ####################### End Scroll to Top Area ####################### -->
 </div>
-<!-- ####################### End Scroll to Top Area ####################### -->
+
+<script>
+  // JavaScript to simulate loading process
+  window.addEventListener('load', function() {
+    var loader = document.querySelector('.loader');
+    var mainContent = document.getElementById('main-content');
+
+    // Simulate delay to demonstrate loader effect
+    setTimeout(function() {
+      loader.style.display = 'none';
+      mainContent.style.display = 'block';
+    }, 500); // Replace with actual loading time or remove for real use case
+  });
+</script>
 <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
 
 <script src="js/github-widget.min.js"></script>
