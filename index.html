@@ -51,7 +51,7 @@
             border-radius: 50%;
             border: 10px solid #e45447; /* Replace with your preferred color */
             border-top-color: transparent;
-            animation: spin 2s linear infinite;
+            animation: spin 0.5s linear infinite;
         }
 
         @keyframes spin {
@@ -71,6 +71,20 @@
             font-weight: bold;
         }
     </style>
+
+    <script>
+        // JavaScript to simulate loading process
+        window.addEventListener('load', function () {
+            var loader = document.querySelector('.loader');
+            var mainContent = document.getElementById('main-content');
+
+            // Simulate delay to demonstrate loader effect
+            setTimeout(function () {
+                loader.style.display = 'none';
+                mainContent.style.display = 'block';
+            }, 500); // Replace with actual loading time or remove for real use case
+        });
+    </script>
 
 </head>
 
@@ -1005,19 +1019,7 @@
     <!-- ####################### End Scroll to Top Area ####################### -->
 </div>
 
-<script>
-  // JavaScript to simulate loading process
-  window.addEventListener('load', function() {
-    var loader = document.querySelector('.loader');
-    var mainContent = document.getElementById('main-content');
 
-    // Simulate delay to demonstrate loader effect
-    setTimeout(function() {
-      loader.style.display = 'none';
-      mainContent.style.display = 'block';
-    }, 500); // Replace with actual loading time or remove for real use case
-  });
-</script>
 <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
 
 <script src="js/github-widget.min.js"></script>
