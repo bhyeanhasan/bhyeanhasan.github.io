@@ -2425,6 +2425,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   .single-job:hover {
     background: #e45447;
     cursor: pointer;
+    margin-top: -20px;
     color: #fff; }
     .single-job:hover .top-left h4 {
       color: #fff; }

@@ -27,6 +27,118 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/github-widget.css"/>
     <link rel="stylesheet" href="css/certificate.css"/>
+
+
+    <style>
+        :root {
+            --surface-color: rgb(234, 223, 223);
+            --curve: 20;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        .card {
+            position: relative;
+            display: block;
+            height: 100%;
+            border-radius: calc(var(--curve) * 1px);
+            overflow: hidden;
+            text-decoration: none;
+        }
+
+        .card__image {
+            width: 100%;
+            height: 300px;
+        }
+
+        .card__overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            border-radius: calc(var(--curve) * 1px);
+            background-color: var(--surface-color);
+            transform: translateY(100%);
+            transition: .2s ease-in-out;
+        }
+
+        .card:hover .card__overlay {
+            transform: translateY(0);
+        }
+
+        .card__header {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 2em;
+            padding: 1em;
+            border-radius: calc(var(--curve) * 1px) 0 0 0;
+            background-color: var(--surface-color);
+            transform: translateY(-100%);
+            transition: .2s ease-in-out;
+        }
+
+        .card__arc {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            bottom: 100%;
+            right: 0;
+            z-index: 1;
+        }
+
+        .card__arc path {
+            fill: var(--surface-color);
+            d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+        }
+
+        .card:hover .card__header {
+            transform: translateY(0);
+        }
+
+        .card__thumb {
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .card__title {
+            font-size: 20px;
+            margin: 0 0 .3em;
+            color: #6A515E;
+        }
+
+        .card__tagline {
+            display: block;
+            margin: 1em 0;
+            font-family: "MockFlowFont";
+            font-size: .8em;
+            color: #D7BDCA;
+        }
+
+        .card__status {
+            font-size: .8em;
+            color: #D7BDCA;
+        }
+
+        .card__description {
+            padding-left: 5px;
+            padding-right: 5px;
+            margin: 0;
+            color: black;
+            /*font-family: "MockFlowFont";*/
+            /*display: -webkit-box;*/
+            /*-webkit-box-orient: vertical;*/
+            /*-webkit-line-clamp: 3;*/
+            overflow: hidden;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -43,21 +155,23 @@
                 <div class="banner-content col-lg-6 col-md-12 justify-content-center mt-1">
 
 
-                    <div style="text-align: center;padding: 5px" class="me wow fadeInDown" data-wow-duration="2s"
+                    <div style="" class=" wow fadeInDown" data-wow-duration="2s"
                          data-wow-delay="1.2s">
-                        <a href="index.html"><img style="width: 40%" src="img/bh_logo.png"></a>
+                        <a href="index.html"><img alt="logo of bhyeanhasan" style="height: 65px"
+                                                  src="img/bh_logo.png"></a>
                     </div>
 
                     <h1 style="padding-bottom: 0px;margin-bottom: 10px ;" class="wow fadeInUp" data-wow-duration="2s"
                         data-wow-delay="1.7s">
-                        Md. Babul Hasan Noyon
+                        Md. Babul Hasan
                     </h1>
 
                     <div class="designation mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay="3s">
-                        B.Sc.(Engg.) in
-                        <span class="designer">
-                                CSE, PSTU
-                            </span>
+                        Software Engineer <br>
+
+                        <h3>
+                        <span class="designer">( Backend & ML )
+                            </span></h3>
 
                     </div>
 
@@ -76,7 +190,7 @@
                 </div>
 
                 <div class=" col-lg-6 col-md-6 align-self-end">
-                    <img class="img-fluid" src="img/newbg.png" alt="Md. Babul Hasan (Noyon) bhyeanhasan">
+                    <img class="img-fluid" src="img/newbg2.png" alt="Md. Babul Hasan (Noyon) bhyeanhasan">
                 </div>
 
             </div>
@@ -287,8 +401,8 @@
 
             <div class="row">
 
-                <div class="col-md-6">
-                    <div class="single-job">
+                <div class="col-md-6 ">
+                    <div class="single-job wow fadeInUp" data-wow-duration="1s">
 
                         <div class="justify-content-between">
                             <div class="top-left text-center">
@@ -334,7 +448,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <div class="single-job">
+                    <div class="single-job wow fadeInUp" data-wow-duration="1s"  >
                         <div class="justify-content-between">
                             <div class="top-left text-center">
                                 <h4>Govt. Syed Hatem Ali College</h4>
@@ -361,7 +475,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <div class="single-job">
+                    <div class="single-job wow fadeInUp" data-wow-duration="1s">
                         <div class="justify-content-between">
                             <div class="top-left text-center">
                                 <h4>Jhalokathi Govt. High School</h4>
@@ -390,7 +504,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <div class="single-job">
+                    <div class="single-job wow fadeInUp" data-wow-duration="1s">
                         <div class="justify-content-between">
                             <div class="top-left text-center">
                                 <h4>Mirzapur Govt. Primary School</h4>
@@ -422,6 +536,453 @@
     </section>
     <!-- Educational Qualification -->
 
+
+    <!-- Programming -->
+    <section style="background-color: white" class="service-area py-5">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Programming Profile</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-service wow fadeInUp text-center" data-wow-duration="1s">
+                        <img style="width: 90%;height: 80px" src="https://iili.io/oT0jj9.png" alt=""><br>
+                        <a target="_blank" href="https://codeforces.com/profile/bhyean" class="primary-btn mt-50"
+                           data-text="Code Forces">
+                            <span>P</span>
+                            <span>r</span>
+                            <span>o</span>
+                            <span>f</span>
+                            <span>i</span>
+                            <span>l</span>
+                            <span>e</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="single-service wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+
+                        <img style="height: 80px"
+                             src="https://cdn.iconscout.com/icon/free/png-256/free-leetcode-3521542-2944960.png?f=webp"
+                             alt=""><br>
+
+                        <a target="_blank" href="https://leetcode.com/bhyeanhasan/" class="primary-btn mt-50"
+                           data-text="LeetCode">
+                            <span>P</span>
+                            <span>r</span>
+                            <span>o</span>
+                            <span>f</span>
+                            <span>i</span>
+                            <span>l</span>
+                            <span>e</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-service wow fadeInUp text-center" data-wow-duration="1s" data-wow-delay="0.6s">
+                        <img style="width: 110%;height: 80px" src="img/hack.svg" alt=""><br>
+                        <a target="_blank" href="https://www.hackerrank.com/bhyeanhasan"
+                           class="primary-btn mt-50 bg-dark" data-text="Hacker Rank">
+
+                            <span>P</span>
+                            <span>r</span>
+                            <span>o</span>
+                            <span>f</span>
+                            <span>i</span>
+                            <span>l</span>
+                            <span>e</span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-service wow fadeInUp text-center" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <img style="height: 80px" src="https://iili.io/oT0WpS.png" alt=""><br>
+                        <a target="_blank" href="https://www.urionlinejudge.com.br/judge/en/profile/312468"
+                           class="primary-btn mt-50" data-text="URI">
+
+                            <span>P</span>
+                            <span>r</span>
+                            <span>o</span>
+                            <span>f</span>
+                            <span>i</span>
+                            <span>l</span>
+                            <span>e</span>
+                        </a>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Programming -->
+
+    <!-- My Projects -->
+    <section class="job-area py-5">
+        <div class="container">
+            <div class="row d-flex justify-content-between align-items-end ">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Projects</h2>
+                    </div>
+                </div>
+
+                <div class="col-md-12 mb-3">
+
+                    <div class="container">
+                        <div class="row">
+
+
+                            <div class="col-md-6 mb-5">
+                                <div href="" class="card">
+                                    <img src="img/img.png" class="card__image" alt=""/>
+                                    <div class="card__overlay">
+                                        <div class="card__header">
+                                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                                                <path/>
+                                            </svg>
+
+                                            <div style="width: 100%" class="card__header-text">
+                                                <h3 class="card__title text-center">Amin Crockeries (Ecommerce)</h3>
+                                                <div class="d-flex justify-content-between mt-2">
+                                                    <a target="_blank"
+                                                       href="https://github.com/bhyeanhasan/Amin-Crockeries"
+                                                       style="border-radius: 20px;border-style: solid;color: white;font-size: 12px"
+                                                       class="btn btn-info">
+                                                        <i class="fa fa-github-square p-1" aria-hidden="true"></i>
+                                                        Source Code
+                                                    </a>
+                                                    <a target="_blank" href="https://bhyean.pythonanywhere.com/"
+                                                       style="border-radius: 20px;border-style: solid;color: white;font-size: 12px"
+                                                       class="btn btn-danger">
+                                                        <i class="fa fa-paper-plane p-1" aria-hidden="true"></i>
+                                                        Live View
+                                                    </a>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <p class="card__description text-center">
+                                            The Amin Crockeries project is a Django-based web application. It features
+                                            inventory management, customer order handling, and sales report generation.
+                                            Administrators can manage products and track stock levels, while customers
+                                            can browse products, place orders, and receive status updates.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 mb-5">
+                                <div href="" class="card">
+                                    <img src="img/img_2.png" class="card__image" alt=""/>
+                                    <div class="card__overlay">
+                                        <div class="card__header">
+                                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                                                <path/>
+                                            </svg>
+
+                                            <div style="width: 100%" class="card__header-text">
+                                                <h3 class="card__title text-center">to-sequential (Python-Package)
+                                                </h3>
+                                                <div class="d-flex justify-content-between mt-2">
+                                                    <a target="_blank"
+                                                       href="https://github.com/bhyeanhasan/to-sequential"
+                                                       style="border-radius: 20px;border-style: solid;color: white;font-size: 12px"
+                                                       class="btn btn-info">
+                                                        <i class="fa fa-github-square p-1" aria-hidden="true"></i>
+                                                        Source Code
+                                                    </a>
+                                                    <a target="_blank" href="https://pypi.org/project/to-sequential/"
+                                                       style="border-radius: 20px;border-style: solid;color: white;font-size: 12px"
+                                                       class="btn btn-danger">
+                                                        <i class="fa fa-paper-plane p-1" aria-hidden="true"></i>
+                                                        Live View
+                                                    </a>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <p class="card__description text-center">
+
+                                            A simple utility function to generate sequential data from a Pandas
+                                            DataFrame, making it suitable for
+                                            training data for sequential models.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-md-6 mb-5">
+                                <div href="" class="card">
+                                    <img src="img/img_1.png" class="card__image" alt=""/>
+                                    <div class="card__overlay">
+                                        <div class="card__header">
+                                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                                                <path/>
+                                            </svg>
+
+                                            <div style="width: 100%" class="card__header-text">
+                                                <h3 class="card__title text-center">Dhanshiri Students Welfare
+                                                    Association</h3>
+                                                <div class="d-flex justify-content-between mt-2">
+                                                    <a target="_blank"
+                                                       href="https://github.com/bhyeanhasan/Dhanshiri-Studets-Welfare-Association-DSWA"
+                                                       style="border-radius: 20px;border-style: solid;color: white;font-size: 12px"
+                                                       class="btn btn-info">
+                                                        <i class="fa fa-github-square p-1" aria-hidden="true"></i>
+                                                        Source Code
+                                                    </a>
+                                                    <a target="_blank" href="https://dswapstu.pythonanywhere.com/"
+                                                       style="border-radius: 20px;border-style: solid;color: white;font-size: 12px"
+                                                       class="btn btn-danger">
+                                                        <i class="fa fa-paper-plane p-1" aria-hidden="true"></i>
+                                                        Live View
+                                                    </a>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <p class="card__description text-center">
+                                            The DSWA web application represents a student-driven endeavor with the
+                                            objective of creating a platform
+                                            for students hailing from Jhalokathi District. Purpose is to facilitate
+                                            connections between students, teachers,
+                                            and alumni, while also serving as a resource for staying informed about
+                                            upcoming events.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-md-6 mb-5">
+                                <div href="" class="card">
+                                    <img src="img/img_3.png" class="card__image" alt=""/>
+                                    <div class="card__overlay">
+                                        <div class="card__header">
+                                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                                                <path/>
+                                            </svg>
+
+                                            <div style="width: 100%" class="card__header-text">
+                                                <h3 class="card__title text-center">Online Image Editor</h3>
+                                                <div class="d-flex justify-content-between mt-2">
+                                                    <a target="_blank"
+                                                       href="https://github.com/bhyeanhasan/Online-Image-Editor"
+                                                       style="border-radius: 20px;border-style: solid;color: white;font-size: 12px"
+                                                       class="btn btn-info">
+                                                        <i class="fa fa-github-square p-1" aria-hidden="true"></i>
+                                                        Source Code
+                                                    </a>
+                                                    <a target="_blank" href="http://bhyeanhasan.pythonanywhere.com/"
+                                                       style="border-radius: 20px;border-style: solid;color: white;font-size: 12px"
+                                                       class="btn btn-danger">
+                                                        <i class="fa fa-paper-plane p-1" aria-hidden="true"></i>
+                                                        Live View
+                                                    </a>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <p class="card__description text-center">
+                                            A dynamic online image editor utilizing Django, and OpenCV for image
+                                            processing. Leveraging DTL,
+                                            Bootstrap, HTML, and CSS for frontend design, I ensured responsive UI/UX.
+                                            Proficient in system design
+                                            and project management, I delivered a seamless platform for image
+                                            manipulation and editing.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6 mb-5">
+                                <div href="" class="card">
+                                    <img src="img/img_4.png" class="card__image" alt=""/>
+                                    <div class="card__overlay">
+                                        <div class="card__header">
+                                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                                                <path/>
+                                            </svg>
+
+                                            <div style="width: 100%" class="card__header-text">
+                                                <h3 class="card__title text-center">Student Diary (Faculty of CSE,
+                                                    PSTU)</h3>
+                                                <div class="d-flex justify-content-between mt-2">
+                                                    <a target="_blank"
+                                                       href="https://github.com/bhyeanhasan/Diary-For-PSTU-CSE"
+                                                       style="border-radius: 20px;border-style: solid;color: white;font-size: 12px"
+                                                       class="btn btn-info">
+                                                        <i class="fa fa-github-square p-1" aria-hidden="true"></i>
+                                                        Source Code
+                                                    </a>
+                                                    <a target="_blank" href="https://appcse16.pythonanywhere.com/"
+                                                       style="border-radius: 20px;border-style: solid;color: white;font-size: 12px"
+                                                       class="btn btn-danger">
+                                                        <i class="fa fa-paper-plane p-1" aria-hidden="true"></i>
+                                                        Live View
+                                                    </a>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <p class="card__description text-center">
+                                            The CSE-Diary project is a Flutter mobile app for my faculty that uses the
+                                            Django Rest Framework for the
+                                            backend.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-md-6 mb-5">
+                                <div href="" class="card">
+                                    <img src="img/front.png" class="card__image" alt=""/>
+                                    <div class="card__overlay">
+                                        <div class="card__header">
+                                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                                                <path/>
+                                            </svg>
+
+                                            <div style="width: 100%" class="card__header-text">
+                                                <h3 class="card__title text-center">Page Reloader Extension</h3>
+                                                <div class="d-flex justify-content-between mt-2">
+                                                    <a target="_blank"
+                                                       href="https://github.com/bhyeanhasan/Google-Chrome-Extention-Automatic-Page-Reloader"
+                                                       style="border-radius: 20px;border-style: solid;color: white;font-size: 12px"
+                                                       class="btn btn-info">
+                                                        <i class="fa fa-github-square p-1" aria-hidden="true"></i>
+                                                        Source Code
+                                                    </a>
+                                                    <a target="_blank"
+                                                       href="https://github.com/bhyeanhasan/Google-Chrome-Extention-Automatic-Page-Reloader"
+                                                       style="border-radius: 20px;border-style: solid;color: white;font-size: 12px"
+                                                       class="btn btn-danger">
+                                                        <i class="fa fa-paper-plane p-1" aria-hidden="true"></i>
+                                                        Live View
+                                                    </a>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <p class="card__description text-center">
+                                            Enables automatic page reloading at user-defined intervals, enhancing
+                                            productivity and convenience by ensuring that your web pages stay updated
+                                            without manual intervention.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <!-- My Projects -->
+
+    <!--Academic achievements & Awards-->
+    <section class="about-area my-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h2>Academic achievements & Awards</h2>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-5 about-left p-3">
+                    <img style="border: medium;border-radius: 10px; height: 350px" class="img-fluid"
+                         src="img/Activity&Award/runnerup.jpg" alt="Formal Picture">
+                </div>
+
+                <div class="col-lg-6 col-md-12 about-right">
+
+
+                    <a href="#" class="btn-block primary-btn my-1" data-text="Runner-Up in Project Showcasing"
+                       target="_blank">
+                        <span>PSTU</span>
+                        <span></span>
+                        <span>IT Carnival 2019</span>
+                    </a>
+
+                    <br>
+
+
+                    <a href="#" class="btn-block primary-btn white my-1" data-text="Education Board Scholarship"
+                       target="_blank">
+                        <span>PSC</span>
+                        <span></span>
+                        <span>JSC</span>
+                        <span></span>
+                        <span>SSC</span>
+                    </a>
+                    <br>
+                    <a href="#" class="btn-block primary-btn white my-1" data-text="Aungkur scholarship"
+                       target="_blank">
+                        <span>2019</span>
+                        <span></span>
+                        <span>2020</span>
+                        <span></span>
+                        <span>2021</span>
+                    </a>
+                    <br>
+                    <a href="#" class="btn-block primary-btn white my-1" data-text="One Bank scholarship"
+                       target="_blank">
+                        <span>2019</span>
+                        <span></span>
+                        <span>2020</span>
+                    </a>
+                    <br>
+                    <a href="#" class="btn-block primary-btn white my-1" data-text="Grameen Bank Scholarship"
+                       target="_blank">
+                        <span>2014</span>
+                        <span></span>
+                        <span>2016</span>
+                        <span></span>
+                        <span>2019</span>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Academic achievements & Awards:-->
 
     <!-- Certificates -->
     <section class="job-area mb-5 mt-5">
@@ -576,169 +1137,6 @@
     <!-- Certificates -->
 
 
-    <!-- Programming -->
-    <section style="background-color: white" class="service-area py-5">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h2>Programming Profile</h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-service wow fadeInUp text-center" data-wow-duration="1s">
-                        <img style="width: 90%;height: 80px" src="https://iili.io/oT0jj9.png" alt=""><br>
-                        <a target="_blank" href="https://codeforces.com/profile/bhyean" class="primary-btn mt-50"
-                           data-text="Code Forces">
-                            <span>P</span>
-                            <span>r</span>
-                            <span>o</span>
-                            <span>f</span>
-                            <span>i</span>
-                            <span>l</span>
-                            <span>e</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="single-service wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-
-                        <img style="height: 80px"
-                             src="https://cdn.iconscout.com/icon/free/png-256/free-leetcode-3521542-2944960.png?f=webp"
-                             alt=""><br>
-
-                        <a target="_blank" href="https://leetcode.com/bhyeanhasan/" class="primary-btn mt-50"
-                           data-text="LeetCode">
-                            <span>P</span>
-                            <span>r</span>
-                            <span>o</span>
-                            <span>f</span>
-                            <span>i</span>
-                            <span>l</span>
-                            <span>e</span>
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-service wow fadeInUp text-center" data-wow-duration="1s" data-wow-delay="0.6s">
-                        <img style="width: 110%;height: 80px" src="img/hack.svg" alt=""><br>
-                        <a target="_blank" href="https://www.hackerrank.com/bhyeanhasan"
-                           class="primary-btn mt-50 bg-dark" data-text="Hacker Rank">
-
-                            <span>P</span>
-                            <span>r</span>
-                            <span>o</span>
-                            <span>f</span>
-                            <span>i</span>
-                            <span>l</span>
-                            <span>e</span>
-                        </a>
-
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-service wow fadeInUp text-center" data-wow-duration="1s" data-wow-delay="0.4s">
-                        <img style="height: 80px" src="https://iili.io/oT0WpS.png" alt=""><br>
-                        <a target="_blank" href="https://www.urionlinejudge.com.br/judge/en/profile/312468"
-                           class="primary-btn mt-50" data-text="URI">
-
-                            <span>P</span>
-                            <span>r</span>
-                            <span>o</span>
-                            <span>f</span>
-                            <span>i</span>
-                            <span>l</span>
-                            <span>e</span>
-                        </a>
-
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- Programming -->
-
-    <!--Academic achievements & Awards-->
-    <section class="about-area my-5">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md-12">
-                    <div class="section-title">
-                        <h2>Academic achievements & Awards</h2>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-5 about-left p-3">
-                    <img style="border: medium;border-radius: 10px; height: 350px" class="img-fluid"
-                         src="img/Activity&Award/runnerup.jpg" alt="Formal Picture">
-                </div>
-
-                <div class="col-lg-6 col-md-12 about-right">
-
-
-                    <a href="#" class="btn-block primary-btn my-1" data-text="Runner-Up in Project Showcasing"
-                       target="_blank">
-                        <span>PSTU</span>
-                        <span></span>
-                        <span>IT Carnival 2019</span>
-                    </a>
-
-                    <br>
-
-
-                    <a href="#" class="btn-block primary-btn white my-1" data-text="Education Board Scholarship"
-                       target="_blank">
-                        <span>PSC</span>
-                        <span></span>
-                        <span>JSC</span>
-                        <span></span>
-                        <span>SSC</span>
-                    </a>
-                    <br>
-                    <a href="#" class="btn-block primary-btn white my-1" data-text="Aungkur scholarship"
-                       target="_blank">
-                        <span>2019</span>
-                        <span></span>
-                        <span>2020</span>
-                        <span></span>
-                        <span>2021</span>
-                    </a>
-                    <br>
-                    <a href="#" class="btn-block primary-btn white my-1" data-text="One Bank scholarship"
-                       target="_blank">
-                        <span>2019</span>
-                        <span></span>
-                        <span>2020</span>
-                    </a>
-                    <br>
-                    <a href="#" class="btn-block primary-btn white my-1" data-text="Grameen Bank Scholarship"
-                       target="_blank">
-                        <span>2014</span>
-                        <span></span>
-                        <span>2016</span>
-                        <span></span>
-                        <span>2019</span>
-                    </a>
-
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Academic achievements & Awards:-->
-
     <!-- Extracurricular activities -->
     <section class="job-area">
         <div class="container">
@@ -831,7 +1229,7 @@
             <div class="row d-flex justify-content-between align-items-end ">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>My Projects</h2>
+                        <h2>Some Visuals</h2>
                     </div>
                 </div>
 
@@ -914,7 +1312,7 @@
                     <div class="footer-top flex-column mt-3">
                         <div class="footer-logo">
                             <a href="#">
-                                <img src="img/bh_logo.png" alt="">
+                                <img style="height: 100px" src="img/bh_logo.png" alt="">
                             </a>
                             <h3 class="p-2">Thanks for Visiting</h3>
                         </div>
