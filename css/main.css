@@ -39,12 +39,31 @@
   border-style: solid;
 }
 
+.experience-details{
+  text-align: right;
+}
 @media only screen and (max-width: 700px) {
   .certificate {
     width:90%;
     height: 50vh;
   }
+  .mymedia{
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .bgdiv{
+    text-align: center;
+  }
+
+  .mybg{
+    height: 500px;
+  }
+  .experience{
+    text-align: center;
+  }
 }
+
 
 ::-moz-selection {
   /* Code for Firefox */
