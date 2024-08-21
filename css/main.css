@@ -1,11 +1,4 @@
-/*--------------------------- Color variations ----------------------*/
-/* Medium Layout: 1280px */
-/* Tablet Layout: 768px */
-/* Mobile Layout: 320px */
-/* Wide Mobile Layout: 480px */
-/* =================================== */
-/*  Basic Style 
-/* =================================== */
+
 
 .certificate{
   width:80%;
@@ -2400,9 +2393,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .single-job {
   background-color: #f9f9ff;
-  padding: 40px 30px;
+  padding: 30px 30px;
   border-radius: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
