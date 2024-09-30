@@ -1,0 +1,40 @@
+# SEO Keywords and Meta Descriptions for bhyeanhasan.github.io
+
+## Meta Title:
+Bhyean Hasan | Data Analyst, Machine Learning Engineer, and Software Developer
+
+## Meta Description:
+Explore Bhyean Hasan's portfolio featuring expertise in data analysis, machine learning, backend engineering, and software development. View projects on predictive analytics, IoT systems, and competitive programming.
+
+## Keywords:
+Data analyst, Machine learning, Backend engineering, Software development, Django, FastAPI, Predictive analytics, IoT systems, Python, Competitive programming, Bhyean Hasan, Traffic prediction, TensorFlow, Pytorch, Django REST, Data annotation tools, ICU monitoring system, Raspberry Pi, E-commerce websites, CodeForces, LeetCode, IntelsenseAI, Intelsense products, Research assistant, Dhaka ICPC, GitHub projects, Portfolio, Python developer, Software containerization, Docker
+
+## Author:
+Bhyean Hasan
+
+## Page Description:
+Bhyean Hasan’s portfolio showcases diverse technical expertise ranging from data analysis and machine learning to IoT system implementation and software engineering. With significant experience in backend development and competitive programming, the portfolio highlights projects and achievements in multiple fields.
+
+## Headings (H1, H2, H3) Suggestions:
+H1: Bhyean Hasan – Data Analyst, Machine Learning Engineer & Developer
+H2: Featured Projects: Predictive Analytics, IoT, and Software Engineering
+H2: Skills and Expertise: Data Analysis, Backend Engineering, and More
+H3: Explore My Competitive Programming Journey
+
+## Alt Text for Images:
+- Portfolio Project 1: Real-time ICU monitoring system using IoT and Raspberry Pi.
+- Portfolio Project 2: E-commerce platform backend using Django and FastAPI.
+- Portfolio Project 3: Machine learning models for traffic prediction and analysis.
+
+## Internal Linking Strategy:
+- Link to Projects page from the homepage and services page.
+- Link to the "About Me" section from every project page for personal context.
+- Link to "Contact" from all pages for user engagement and collaboration opportunities.
+
+## External Links:
+- Link to GitHub repositories showcasing open-source contributions and project code.
+- Link to relevant external publications or research, if available.
+
+## Social Media Profiles (for linking):
+- LinkedIn: https://www.linkedin.com/in/bhyeanhasan/
+- GitHub: https://github.com/bhyeanhasan
